@@ -1,0 +1,4 @@
+# 允许依赖包的 install/postinstall 脚本运行。
+# Vercel 构建环境默认会拦截部分 install scripts（如 esbuild 的 postinstall），
+# 导致 esbuild 二进制未正确安装、vite 构建失败。显式声明以放行。
+ignore-scripts=false
